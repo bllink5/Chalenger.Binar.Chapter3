@@ -1,4 +1,4 @@
-class Player2(var pemain2 : Janken) {
+class Player2 {
     var Pemain2 = ""
     fun cetakPlayer2(){
         val Janken = arrayOf("batu","gunting","kertas")

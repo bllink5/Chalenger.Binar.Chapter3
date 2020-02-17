@@ -1,6 +1,6 @@
 class System(var p1 : Player, var p2 : Player2){
     fun cetakSystem() {
-        var result: String
+        val result: String
         p1.cetakPlayer()
         p2.cetakPlayer2()
         if (p1.Pemain1.equals(p2.Pemain2)) {
@@ -13,13 +13,13 @@ class System(var p1 : Player, var p2 : Player2){
         } else result = "Pemain 2 menang"
         println("Masukkan Pemain 1 : ${p1.Pemain1}")
         println("Masukkan Pemain 2 : ${p2.Pemain2}")
-        println("$result")
+        println(result)
         println("Lagi ? : Y/N")
-        val inputs = arrayOf("y", "n")
-        var input = readLine()
-        if (input.equals("y")) {
+
+        val input = readLine()
+        if (input.equals("y",ignoreCase = true)) {
             return cetakSystem()
-        } else (input.equals("n"))
+        } else (input.equals("n",ignoreCase = true))
         println("GAME OVER")
     }
 }

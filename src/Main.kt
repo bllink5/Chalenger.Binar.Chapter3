@@ -1,13 +1,12 @@
 fun main (){
- var pilihan = Janken(tiga = arrayOf("batu","gunting","kertas"))
 
- var player = Player(pemain1 = pilihan)
+ val player = Player()
 
- var player2 = Player2(pemain2 = pilihan)
+ val player2 = Player2()
 
- var sistem = System(p1 = player,p2 = player2)
+ val sistem = System(p1 = player,p2 = player2)
 
- var input = 0
+ var input: Int
 
  do {
   println("======================================")
@@ -21,4 +20,5 @@ fun main (){
    2-> println("TERIMA KASIH TELAH BERMAIN")
   }
  }while (input!=2)
+
 }
